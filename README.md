@@ -1,4 +1,4 @@
-<h1 align="center"> MonumentOS is an immutable OS using [RPM-OSTree](https://coreos.github.io/rpm-ostree/), using Pantheon to stick closely to the ethos and workflow of [elementary](https://elementary.io/open-source). </h1>
+<h1 align="center"> MonumentOS is an immutable OS using <a href="https://coreos.github.io/rpm-ostree/">RPM-OSTree</a>, using Pantheon to stick closely to the ethos and workflow of <a href="https://elementary.io/open-source">elementary</a>. </h1>
 
 <p align="center"> (In case you might bring up the fact that Sodalite exists, as much as I hate to say it, the repository was archived on the 31st of January, 2025.) </p>
 
