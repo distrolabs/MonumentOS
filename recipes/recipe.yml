@@ -23,7 +23,7 @@ modules:
     install:
       - micro
       - starship
-    remove:
+#   remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       ## please don't try to remove firefox, it'll fail the fxxking build otherwise. thanks!
