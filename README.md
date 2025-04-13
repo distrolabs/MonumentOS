@@ -1,8 +1,6 @@
-# BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+<h1 align="center"> MonumentOS is an immutable OS using [RPM-OSTree](https://coreos.github.io/rpm-ostree/), using Pantheon to stick closely to the ethos and workflow of [elementary](https://elementary.io/open-source). </h1>
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
-
-After setup, it is recommended you update this README to describe your custom image.
+<p align="center"> (In case you might bring up the fact that Sodalite exists, as much as I hate to say it, the repository was archived on the 31st of January, 2025.) </p>
 
 ## Installation
 
@@ -13,7 +11,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/blue-build/template:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/distrolabs/monumentos:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -21,7 +19,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/blue-build/template:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/distrolabs/monumentos:latest
   ```
 - Reboot again to complete the installation
   ```
@@ -29,6 +27,22 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 
 The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+
+## Updating
+
+You can perform an update by opening the terminal and running the following:
+
+```bash
+sudo rpm-ostree upgrade
+```
+
+Similarly, you can roll back in case of breakage by running the following:
+
+```bash
+sudo rpm-ostree upgrade
+```
+
+# For developers of MonumentOS
 
 ## ISO
 
